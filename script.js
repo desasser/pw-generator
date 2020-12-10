@@ -87,7 +87,7 @@ for (let i = 0; i < pwLength; i++) {
 console.log('password', randomPw);
 
 
-//TODO: Display password either on page or in an alert
+//Display password on page
 return randomPw;
 }
 //TODO: Finish up
