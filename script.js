@@ -90,10 +90,10 @@ console.log('password', randomPw);
 //Display password on page
 return randomPw;
 }
-//TODO: Finish up
+//Finish up
 //Check console devTools for errors
 //Deploy
 //Load clean
-//TODO: GitHub URL submitted
-//TODO: GitHub Repo with code submitted
-//TODO: Readme
+//GitHub URL submitted
+//GitHub Repo with code submitted
+//Readme
