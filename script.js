@@ -23,7 +23,7 @@ var typeCheck = false;
 var lowerCaseAlphabet = "abcdefghijlmnopqrstuvwxyz";
 var upperCaseAlphabet = lowerCaseAlphabet.toUpperCase();
 var numericChars = "1234567890";
-var spCharSet = " !\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~";
+var spCharSet = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~";
 var types = [lowerCase, upperCase, numeric, spChar];
 var chars = [lowerCaseAlphabet, upperCaseAlphabet, numericChars, spCharSet];
 var totalTypes = [];
@@ -91,9 +91,9 @@ console.log('password', randomPw);
 return randomPw;
 }
 //TODO: Finish up
-//TODO: Check console devTools for errors
-//TODO: Deploy
-//TODO: Load clean
+//Check console devTools for errors
+//Deploy
+//Load clean
 //TODO: GitHub URL submitted
 //TODO: GitHub Repo with code submitted
 //TODO: Readme
