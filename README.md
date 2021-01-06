@@ -1,22 +1,35 @@
 # pw-generator
 
-Completed by: Me, Daniel S.
+## Completed by: 
+### Daniel S
 
-Goals: Utilize javascript to generate a random password
+## Link: https://desasser.github.io/pw-generator/
 
--Prompt user for input regarding
-    -length
-    -character types
--Confirm that correct data was entered and eliminate edge cases
--Output resulting random password to screen
--Practice using console.log to check and confirm process
+<br />
 
-Skills practiced: Javascript (prompts, confirms, arrays, loops, comparatives, and functions)
-Installation: n/a
+- - - - 
 
-Link: https://desasser.github.io/pw-generator/
+## Goals: 
+### Utilize javascript to generate a random password
 
-Instructions:
--Load website and click 'Generate Password'
--Follow prompts for user input
--Copy and paste or otherwise utilize the produced password
+<br />
+
+## Key Functionality:
+* Prompt user for input regarding length and character types
+* Confirm that correct data was entered and eliminate edge cases
+* Output resulting random password to screen
+* Practice using console.log to check and confirm process
+
+<br />
+
+## Skills practiced: Javascript (prompts, confirms, arrays, loops, comparatives, and functions)
+
+<br />
+
+## Instructions:
+* Load website and click 'Generate Password'
+* Follow prompts for user input
+* Copy and paste or otherwise utilize the produced password
+
+## Screenshot: 
+<img src="Generated password.jpg" alt="Password generator results">
