@@ -5,15 +5,11 @@ const generateBtn = document.querySelector("#generate");
 function writePassword() {
   const password = generatePassword();
   const passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
 
 //Create a series of prompts to determine the nature of the password
 function generatePassword() {
@@ -37,19 +33,11 @@ while (pwLength < 8 || pwLength > 128) {
   }
 }
 
-//Lowercase?
-//Uppercase?
-//Numeric?
-//Special characters?
-
-
 while (typeCheck === false) {
   var lowerCase = confirm("Do you want to include lowercase characters?");
   var upperCase = confirm("Do you want to include uppercase characters?");
   var numeric = confirm("Do you want to include numeric characters?");
   var spChar = confirm("Do you want to include special characters?");
-
-
 
   //Check input to confirm that at least one character type should be selected
   if (lowerCase === false && upperCase === false && numeric === false && spChar === false) {
@@ -57,15 +45,11 @@ while (typeCheck === false) {
   } else {
     typeCheck = true;
   }
-
 }
 types = [lowerCase, upperCase, numeric, spChar];
 //Once all input is collected, generate a password using the selected criteria
 
-
-
 //Check which types are used, then concatenate string of available letters
-
 for (let i = 0; i < types.length; i++) {
   if (types[i]) {
     totalTypes = totalTypes + chars[i];
@@ -73,17 +57,11 @@ for (let i = 0; i < types.length; i++) {
 }
 
 // edge case - protect against bad luck of all one type of char
-
-
 //Randomly generate password of user input length from total set of characters
-
 for (let i = 0; i < pwLength; i++) {
   const randomPwChar = totalTypes[Math.floor(Math.random() * totalTypes.length)];
   randomPw += randomPwChar; 
 }
-
-
-
 
 //Display password on page
 return randomPw;
