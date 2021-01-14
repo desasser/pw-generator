@@ -1,10 +1,10 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  const password = generatePassword();
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
@@ -18,16 +18,16 @@ generateBtn.addEventListener("click", writePassword);
 //Create a series of prompts to determine the nature of the password
 function generatePassword() {
 //Var declaration
-var pwLength = 0;
-var typeCheck = false;
-var lowerCaseAlphabet = "abcdefghijlmnopqrstuvwxyz";
-var upperCaseAlphabet = lowerCaseAlphabet.toUpperCase();
-var numericChars = "1234567890";
-var spCharSet = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~";
-var types = [lowerCase, upperCase, numeric, spChar];
-var chars = [lowerCaseAlphabet, upperCaseAlphabet, numericChars, spCharSet];
-var totalTypes = [];
-var randomPw ="";
+let pwLength = 0;
+let typeCheck = false;
+const lowerCaseAlphabet = "abcdefghijlmnopqrstuvwxyz";
+const upperCaseAlphabet = lowerCaseAlphabet.toUpperCase();
+const numericChars = "1234567890";
+const spCharSet = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~";
+let types = [lowerCase, upperCase, numeric, spChar];
+const chars = [lowerCaseAlphabet, upperCaseAlphabet, numericChars, spCharSet];
+let totalTypes = [];
+let randomPw ="";
 
 //Length of password, 8<=x<=128; check pw length, ask again for fresh input if outside of bounds
 while (pwLength < 8 || pwLength > 128) {
@@ -67,7 +67,7 @@ console.log(spCharSet);
 console.log(upperCaseAlphabet);
 //Check which types are used, then concatenate string of available letters
 
-for (var i = 0; i < types.length; i++) {
+for (let i = 0; i < types.length; i++) {
   if (types[i]) {
     totalTypes = totalTypes + chars[i];
   }
@@ -80,7 +80,7 @@ console.log('types array', types);
 //Randomly generate password of user input length from total set of characters
 
 for (let i = 0; i < pwLength; i++) {
-  var randomPwChar = totalTypes[Math.floor(Math.random() * totalTypes.length)];
+  const randomPwChar = totalTypes[Math.floor(Math.random() * totalTypes.length)];
   randomPw += randomPwChar; 
 }
 
