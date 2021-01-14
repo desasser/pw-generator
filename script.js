@@ -49,7 +49,7 @@ while (typeCheck === false) {
   var numeric = confirm("Do you want to include numeric characters?");
   var spChar = confirm("Do you want to include special characters?");
 
-  console.log('User input', lowerCase, upperCase, numeric, spChar);
+
 
   //Check input to confirm that at least one character type should be selected
   if (lowerCase === false && upperCase === false && numeric === false && spChar === false) {
@@ -57,14 +57,13 @@ while (typeCheck === false) {
   } else {
     typeCheck = true;
   }
-  console.log('typeCheck', typeCheck);
+
 }
 types = [lowerCase, upperCase, numeric, spChar];
 //Once all input is collected, generate a password using the selected criteria
 
 
-console.log(spCharSet);
-console.log(upperCaseAlphabet);
+
 //Check which types are used, then concatenate string of available letters
 
 for (let i = 0; i < types.length; i++) {
@@ -75,8 +74,7 @@ for (let i = 0; i < types.length; i++) {
 
 // edge case - protect against bad luck of all one type of char
 
-console.log('total Types string', totalTypes);
-console.log('types array', types);
+
 //Randomly generate password of user input length from total set of characters
 
 for (let i = 0; i < pwLength; i++) {
@@ -84,7 +82,7 @@ for (let i = 0; i < pwLength; i++) {
   randomPw += randomPwChar; 
 }
 
-console.log('password', randomPw);
+
 
 
 //Display password on page
